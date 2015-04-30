@@ -154,6 +154,11 @@ button.grey, .button.grey {
     color: #666;
 }
 
+button.red, .button.red {
+    border-color: #d13f4a;
+    color: #d13f4a;
+}
+
 .simple-button {
     background: #303;
     border: 0;
@@ -177,6 +182,7 @@ button.grey, .button.grey {
 
 /* Hexagons */
 .hexagon {
+    background-color: #333;
     background-position: -50px 0; /* -left position -1 x width x sin(30) */
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -196,6 +202,7 @@ button.grey, .button.grey {
 
 .hexagon .face1,
 .hexagon .face2 {
+    background-color: #333;
     background-image: inherit;
     height: 100%;
     left: 0;
@@ -214,6 +221,7 @@ button.grey, .button.grey {
 
 .hexagon .face1:before,
 .hexagon .face2:before {
+    background-color: #333;
     background-image: inherit;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -264,6 +272,19 @@ button.grey, .button.grey {
     transform-origin: 100% 0;
 }
 
+.hexagon .content {
+    display: block;
+    left: -50%;
+    line-height: 1;
+    margin-top: -25%;
+    position: absolute;
+    padding: 0 10%;
+    top: 50%;
+    width: 180%;
+}
+
+.hexagon .content img {max-width: 100%;}
+
 /* General */
 a {color: #909; text-decoration: none;}
 a:hover {text-decoration: underline;}
@@ -303,11 +324,11 @@ a:hover {text-decoration: underline;}
 }
 .masthead li {
     float: left;
-    margin: 0 0 0 3em;
+    margin: 0 0 0 2.7em;
 }
 
 .masthead li:first-child {margin: 0;}
-.masthead li:last-of-type {margin-left: 8em;}
+.masthead li:last-of-type {margin-left: 6em;}
 
 .masthead nav a {color: #333366;}
 .masthead nav a:hover {color: #990099; text-decoration: none;}
@@ -326,6 +347,11 @@ a:hover {text-decoration: underline;}
     width: 100%;
 }
 
+.title-img.short {
+    height: 320px;
+    line-height: 450px;
+}
+
 .title-banner {
     background-color: #2dd3db;
     background-image: url('../img/bg-blue.jpg');
@@ -333,6 +359,11 @@ a:hover {text-decoration: underline;}
     height: auto;
     line-height: 1;
     padding: 25px 0;
+}
+
+.title-banner.alt {
+    background-color: #edbd22;
+    background-image: url('../img/bg-yellow.jpg');
 }
 
 /* footer */
@@ -667,6 +698,9 @@ a:hover {text-decoration: underline;}
 
 .blog aside .img-ad {margin: 0 0 1em;}
 .blog aside .img-ad img {width: 100%;}
+.blog aside .img-ad img.hover {display: none;}
+.blog aside .img-ad a:hover img.hover {display: inline-block;}
+.blog aside .img-ad a:hover img.normal {display: none;}
 
     .calendario ol {
         font-size: 18px;
@@ -813,7 +847,291 @@ a:hover {text-decoration: underline;}
     .comments-form textarea {width: 100%;}
     .comments-form .submit {text-align: right;}
 
+/* Dona */
+.diferencia {padding: 2em 0;}
+.diferencia header {text-align: center;}
+.diferencia h1 {
+    color: #336;
+    font-size: 48px;
+    font-weight: 100;
+    margin: 0 2em 0.5em;
+}
+
+.diferencia ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.diferencia li {
+    float: left;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    padding: 0 2%;
+    text-align: center;
+    width: 21%;
+}
+
+.diferencia strong {
+    display: block;
+    text-transform: uppercase;
+}
+
+.diferencia a {
+    color: #336;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.diferencia a:hover {color: #909; text-decoration: none;}
+
+.diferencia li:nth-child(0n + 3),
+.diferencia li:nth-child(0n + 2) {
+    background: url('../img/colon.gif') no-repeat right 70px;
+}
+
+.presencia {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.presencia h2 {
+    color: #336;
+    font-size: 48px;
+    font-weight: 100;
+    margin: 0 2em 0.5em;
+}
+
+.presencia ul {
+    list-style: none;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.presencia ul li {
+    float: left;
+    height: 150px;
+    width: 25%;
+}
+
+.presencia ul a {
+    background: #303;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    height: 90%;
+    padding: 5%;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.presencia ul a:hover {text-decoration: none;}
+.presencia ul a:hover em {text-decoration: underline;}
+
+.presencia ul li:nth-child(4n+2) a {background: #9f1897; color: #fff;}
+.presencia ul li:nth-child(4n+3) a {background: #25cbd3; color: #01484c}
+.presencia ul li:nth-child(4n+4) a {background: #066; color: #fff;}
+.presencia ul li:nth-child(4n+5) a {background: #066; color: #fff;}
+.presencia ul li:nth-child(4n+6) a {background: #303; color: #fff;}
+.presencia ul li:nth-child(4n+7) a {background: #9f1897; color: #fff;}
+.presencia ul li:nth-child(4n+8) a {background: #303; color: #fff;}
+.presencia ul li:nth-child(4n+9) a {background: #25cbd3; color: #01484c}
+.presencia ul li:nth-child(4n+10) a {background: #066; color: #fff;}
+.presencia ul li:nth-child(4n+11) a {background: #303; color: #fff;}
+.presencia ul li:nth-child(4n+12) a {background: #25cbd3; color: #01484c;}
+.presencia ul li:nth-child(4n+13) a {background: #303; color: #fff;}
+.presencia ul li:nth-child(4n+14) a {background: #9f1897; color: #fff;}
+.presencia ul li:nth-child(4n+15) a {background: #25cbd3; color: #01484c}
+.presencia ul li:nth-child(4n+16) a {background: #066; color: #fff;}
+
+.presencia a strong,
+.presencia a em  {
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+}
+.presencia a em {
+    font-size: 26px;
+    font-weight: 100;
+    margin: 0 0 20px;
+}
+.presencia a span {display: block;}
+
+.logros {padding: 2em 0; text-align: center;}
+
+.logros h1 {
+    color: #336;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0 0 1.5em;
+}
+
+.logros ul {
+    color: #336;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.logros li {
+    float: left;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    margin: 0 0 2em;
+    padding: 0 1%;
+    width: 31.3%;
+}
+
+.logros li:nth-child(3n+4) {clear: left;}
+
+.logros strong {display: block;}
+
+.logros em.number {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.logros a.button {
+    padding-left: 4em;
+    padding-right: 4em;
+    width: auto;
+}
+
+/* Nosotros */
+.norte {
+    background: url('../img/bg-norte.jpg') no-repeat center top;
+    color: #fff;
+    font-size: 24px;
+    height: 190px;
+    margin: 3.5em auto;
+    padding: 30px 20px 0 410px;
+    position: relative;
+    max-width: 400px;
+}
+
+.norte img {
+    left: -10px;
+    position: absolute;
+    top: -40px;
+}
+
+.norte h1 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nosotros-hacemos {
+    color: #336;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.nosotros-hacemos p {margin: 0 15% 1em;}
+
+.img-div {clear: both; width: 100%;}
+.img-div img {width: 100%;}
+.img-div .small {display: none;}
+
+.proyectos {
+    color: #336;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.proyectos h1 {font-size: 24px; font-weight: 100;}
+
+.proyectos ul {list-style: none; margin: 3em 0 0.5em; padding: 0;}
+.proyectos li {
+    color: #999;
+    float: left;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 0 2em;
+    text-transform: uppercase;
+    width: 33.3%;
+}
+
+.proyectos li a {color: #999; display: block;}
+.proyectos li a:hover {color: #999; text-decoration: none;}
+
+.proyectos li a .ico {
+    background: url('../img/sprite-proyectos.png');
+    display: block;
+    height: 135px;
+    margin: 0 auto;
+    width: 135px;
+}
+
+.proyectos li a strong {color: #3cc; display: block;}
+.proyectos li a strong em {color: #999;}
+
+.proyectos li a:hover strong {color: #9f1897; text-decoration: none;}
+.proyectos li a:active strong {color: #f8c653;}
+
+.proyectos li a.proyecto-01 .ico {background-position: 0 0;}
+.proyectos li a.proyecto-01:hover .ico {background-position: 0 -270px;}
+.proyectos li a.proyecto-01:active .ico {background-position: 0 -135px;}
+
+.proyectos li a.proyecto-02 .ico {background-position: -135px 0;}
+.proyectos li a.proyecto-02:hover .ico {background-position: -135px -270px;}
+.proyectos li a.proyecto-02:active .ico {background-position: -135px -135px;}
+
+.proyectos li a.proyecto-03 .ico {background-position: -270px 0;}
+.proyectos li a.proyecto-03:hover .ico {background-position: -270px -270px;}
+.proyectos li a.proyecto-03:active .ico {background-position: -270px -135px;}
+
+.proyectos li a.proyecto-04 .ico {background-position: -405px 0;}
+.proyectos li a.proyecto-04:hover .ico {background-position: -405px -270px;}
+.proyectos li a.proyecto-04:active .ico {background-position: -405px -135px;}
+
+.proyectos li a.proyecto-05 .ico {background-position: -540px 0;}
+.proyectos li a.proyecto-05:hover .ico {background-position: -540px -270px;}
+.proyectos li a.proyecto-05:active .ico {background-position: -540px -135px;}
+
+.proyectos li a.proyecto-06 .ico {background-position: -675px 0;}
+.proyectos li a.proyecto-06:hover .ico {background-position: -675px -270px;}
+.proyectos li a.proyecto-06:active .ico {background-position: -675px -135px;}
+
+.valores {padding: 40px 0 20px;}
+
+.valores ul {list-style: none; margin: 0; padding: 0;}
+.valores ul li {float: left; height: 207.84px; margin: 0 10px 20px; width: 180px;}
+
+.valores ul li:nth-child(2n+2) {margin-top: 105px;}
+.valores ul li:nth-child(0n+6) {clear: left;}
+.valores ul li:nth-child(0n+11) {
+    clear: both;
+    float: none;
+    left: 50%;
+    margin: 0 0 0 -90px;
+    position: relative;
+    top: -105px;
+}
+
+.valores ul li:nth-child(2n+6) {margin-top: -105px;}
+
 /* Media Queries */
+@media all and (max-width: 999px) {
+    .valores ul li {margin: 0 5px 10px;}
+}
+
+@media all and (max-width: 950px) {
+    .valores {padding-top: 180px;}
+    .valores ul {margin: 0 auto; width: 570px;}
+    .valores ul li:nth-child(0n+2) {margin-top: 105px;}
+    .valores ul li:nth-child(2n+4) {clear: left; margin-top: -105px;}
+    .valores ul li:nth-child(0n+6) {clear: none; margin-top: -105px;}
+    .valores ul li:nth-child(0n+7) {clear: left; margin-top: -105px;}
+    .valores ul li:nth-child(0n+8) {clear: none; margin-top: 0;}
+    .valores ul li:nth-child(0n+9) {clear: none; margin-top: -105px;}
+    .valores ul li:nth-child(0n+11) {clear: none; left: 15px; margin: -105px 0 0 370px;}
+}
+
 @media all and (max-width: 720px) {
 
     .title-banner img {height: 63px;}
@@ -908,6 +1226,59 @@ a:hover {text-decoration: underline;}
     .pagination .button {width: 100%;}
 
     .comments-form {width: 100%;}
+
+    /* Dona */
+    .diferencia h1 {font-size: 27px;}
+    .diferencia h2 {margin: 0 0 1em;}
+    .diferencia li {
+        background: none !important;
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .presencia h1 img {height: 90px;}
+    .presencia h2 {font-size: 24px;}
+    .presencia ul li {width: 50%;}
+    .presencia figure img {display: none;}
+
+    .logros ul li {float: none; margin: 0 auto 2em; padding: 0; width: 80%;}
+    .logros em.number {font-size: 80px;}
+
+    /* Nosotros */
+    .norte {
+        color: #333;
+        height: auto;
+        padding: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .norte img {position: relative;}
+    .norte h1,
+    .norte p {
+        margin: 0 auto;
+        text-align: left;
+        width: 70%;
+    }
+
+    .nosotros-hacemos h1 img {height: 90px;}
+
+    .valores {padding-top: 40px;}
+    .valores ul {width: 400px;}
+    .valores ul li {
+        clear: none !important;
+        float: left !important;
+        margin: 0 10px 20px!important;
+        left: auto !important;
+        top: auto !important;
+    }
+
+    .valores ul li:nth-child(0n+2) {margin-top: 105px !important;}
+    .valores ul li:nth-child(2n+3) {
+        clear: left !important;
+        margin-top: -105px !important;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -939,6 +1310,8 @@ a:hover {text-decoration: underline;}
 
     .title-img img {height: 80px;}
 
+    .title-img.short {height: 150px; line-height: 210px;}
+
     /* footer */
     .mastfoot .ideas {font-size: 17px;}
 
@@ -955,6 +1328,18 @@ a:hover {text-decoration: underline;}
     /* Blog */
     .big-previews-posts li.small header,
     .big-previews-posts li header {width: 80%;}
+
+    /* dona */
+    .presencia h1 img {height: 80px;}
+    .presencia ul li {float: none; width: 100%;}
+
+    /* Nosotros */
+    .nosotros-hacemos h1 img {height: 80px;}
+
+    .img-div .small {display: block;}
+    .img-div .big {display: none;}
+
+    .proyectos li {width: 49.9%;}
 }
 
 @media all and (max-width: 360px) {
@@ -970,4 +1355,19 @@ a:hover {text-decoration: underline;}
 
     /* Contact */
     .contact h1 img {height: 65px;}
+
+    /* dona */
+    .presencia h1 img {height: 65px;}
+    .presencia ul li {float: none; width: 100%;}
+
+    /* Nosotros */
+    .norte img {left: 0; max-width: 100%;}
+    .nosotros-hacemos h1 img {height: 65px;}
+    .proyectos li {float: none; width: 100%;}
+
+    .valores ul {width: auto;}
+    .valores .contents ul li {
+        float: none !important;
+        margin: 0 auto 20px !important;
+    }
 }
