@@ -13,7 +13,7 @@ get_header(); ?>
         <img src="<?php echo get_template_directory_uri(); ?>/img/bg-cafe-te.jpg" alt="Café/Té" />
         <img src="<?php echo get_template_directory_uri(); ?>/img/bg-amanecer-atardecer.jpg" alt="Amanecer/Atardecer" />
         <img src="<?php echo get_template_directory_uri(); ?>/img/bg-tradicion-moderno.jpg" alt="Tradición/Moderno" />
-        <img src="<?php echo get_template_directory_uri(); ?>/img/bg-dulce-Salado.jpg" alt="Dulce/Salado" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/bg-dulce-salado.jpg" alt="Dulce/Salado" />
     </div>
 
     <section class="actividades"><div class="contents">
