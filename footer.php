@@ -17,7 +17,6 @@
     </footer>
 
     <?php wp_footer(); ?>
-    <script src="js/scripts.js"></script>
 </div>
 </body>
 </html>
