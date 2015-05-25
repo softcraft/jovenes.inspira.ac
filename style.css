@@ -709,7 +709,7 @@ a:hover {text-decoration: underline;}
 .blog-filters label {margin: 5px 0 0; width: 38%;}
 .blog-filters .styled-select {margin: 0 2% 0 0; width: 25%;}
 
-.blog-filters .submit {float: right;}
+.blog-filters .submit {float: left;}
 
 .blog-filters.centered {text-align: center;}
 .blog-filters.centered .styled-select,
