@@ -24,7 +24,7 @@ get_header(); ?>
                                     'orderby'            => 'NAME',
                                     'order'              => 'DESC',
                                     'show_count'         => 0,
-                                    'child_of'           => 1,
+                                    'child_of'           => 3,
                                     'echo'               => 1,
                                     'name'               => 'cat',
                                     'id'                 => 'ciudades',
