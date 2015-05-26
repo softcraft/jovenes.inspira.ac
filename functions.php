@@ -446,19 +446,7 @@ if ( function_exists('register_field_group') ) {
                 'save_format'  => 'object',
                 'preview_size' => 'thumbnail',
                 'library'      => 'all'
-            ),
-            array (
-                'key'           => 'field_5545567e73917',
-                'label'         => '',
-                'name'          => '',
-                'type'          => 'text',
-                'default_value' => '',
-                'placeholder'   => '',
-                'prepend'       => '',
-                'append'        => '',
-                'formatting'    => 'html',
-                'maxlength'     => ''
-            ),
+            )
         ),
         'location' => array (
             array (
