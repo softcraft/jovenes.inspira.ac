@@ -39,7 +39,7 @@ get_header(); ?>
                                 <strong><?php the_title(); ?></strong>
                             </a>
                             <div data-remodal-id="<?php the_title(); ?>" class="remodal proyecto-info">
-                                <?php the_post_thumbnail(); ?>
+                                <?php the_post_thumbnail('modal-thumb'); ?>
 
                                 <div class="content">
                                     <strong class="title">INSPIRA</strong>

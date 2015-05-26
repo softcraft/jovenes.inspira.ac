@@ -51,6 +51,7 @@ get_header(); ?>
 
                 foreach($categories as $category) {
                     $thumb = get_field('imagen_de_modal', 'category_'.$category->cat_ID);
+                    $image = wp_get_attachment_image_src( $thumb['id'], 'modal-thumb' );
 
                     // echo '<pre>'; print_r(get_field('imagen_de_modal', 'category_'.$category->cat_ID)); echo '</pre>';
                     echo
@@ -61,7 +62,7 @@ get_header(); ?>
                                 <strong>'.$category->name.'</strong>
                             </a>
                             <div class="proyecto-info remodal" data-remodal-id="'.$category->slug.'">
-                                <img src="'.$thumb['url'].'" alt="" />
+                                <img src="'.$image[0].'" alt="" />
 
                                 <div class="content">
                                     <strong class="title">INSPIRA</strong>
