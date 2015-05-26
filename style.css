@@ -1468,7 +1468,7 @@ a:hover {text-decoration: underline;}
     letter-spacing: 0.1em;
     margin: 0 0 100px;
     text-transform: uppercase;
-    width: 220px;
+    width: 245px;
 }
 
 .membresias li:nth-child(odd) {clear: left; float: left;}
