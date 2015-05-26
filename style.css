@@ -1372,16 +1372,22 @@ a:hover {text-decoration: underline;}
 }
 
 .actividades .ico-campañas {background-position: 0 0;}
-.actividades a:hover .ico-campañas {background-position: 0 -150px;}
-.actividades a:active .ico-campañas {background-position: 0 -300px;}
+.actividades a:hover .ico-campañas,
+.actividades a:hover .ico-Campañas {background-position: 0 -150px;}
+.actividades a:active .ico-campañas,
+.actividades a:active .ico-Campañas {background-position: 0 -300px;}
 
 .actividades .ico-actividades {background-position: -150px 0;}
-.actividades a:hover .ico-actividades {background-position: -150px -150px;}
-.actividades a:active .ico-actividades {background-position: -150px -300px;}
+.actividades a:hover .ico-actividades,
+.actividades a:hover .ico-Actividades {background-position: -150px -150px;}
+.actividades a:active .ico-actividades,
+.actividades a:active .ico-Actividades {background-position: -150px -300px;}
 
 .actividades .ico-proyectos {background-position: -300px 0;}
-.actividades a:hover .ico-proyectos {background-position: -300px -150px;}
-.actividades a:active .ico-proyectos {background-position: -300px -300px;}
+.actividades a:hover .ico-proyectos,
+.actividades a:hover .ico-Proyectos {background-position: -300px -150px;}
+.actividades a:active .ico-proyectos,
+.actividades a:active .ico-Proyectos {background-position: -300px -300px;}
 
 .events-squared {margin: 0 auto 80px; text-align: center;}
 .events-squared li {
