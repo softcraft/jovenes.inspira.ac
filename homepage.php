@@ -47,7 +47,10 @@ get_header(); ?>
                     <?php while ($query->have_posts()) : $query->the_post(); ?>
                         <li><a href="<?php the_permalink(); ?>" class="hexagon" style="background-image: url('<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium', true )[0]; ?>');">
                             <span class="content">
-                                <date><?php echo date('d - F - o', get_post_meta(get_the_id(), 'inspira_events_enddate', true) ); ?></date>
+                                <span class="info">
+                                    <strong><?php the_title(); ?></strong>
+                                    <date><?php echo date('d - F - o', get_post_meta(get_the_id(), 'inspira_events_enddate', true) ); ?></date>
+                                </span>
                             </span>
                             <span class="face1"></span>
                             <span class="face2"></span>

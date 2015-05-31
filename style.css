@@ -302,13 +302,16 @@ button.yellow, .button.yellow {
 }
 
 .hexagon .content img {max-width: 100%;}
-.hexagon .content date {
+.hexagon .content date,
+.hexagon .content .info {
     background: rgba(0,0,0,0.7);
     color: #fff;
     display: inline-block;
-    margin-top: 15px;
+    margin: 5px 20px 0 20px;
     padding: 8px 8px;
 }
+
+.hexagon .content .info date {background: none; padding: 0; margin: 0;}
 
 /* General */
 a {color: #909; text-decoration: none;}
