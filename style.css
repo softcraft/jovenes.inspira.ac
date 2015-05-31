@@ -87,7 +87,7 @@ header h2 {
     z-index: 1;
 }
 
-.styled-select:after {
+.styled-select:before {
     background: #c90 url('img/ico-arrow-down.png') no-repeat center;
     content: '';
     display: block;
@@ -114,7 +114,7 @@ header h2 {
     position: relative;
     text-transform: uppercase;
     width: 115%;
-    z-index: 2;
+    z-index: 10;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -122,7 +122,7 @@ header h2 {
 }
 
 .styled-select.purple {border-color: #303;}
-.styled-select.purple:after {background-color: #303;}
+.styled-select.purple:before {background-color: #303;}
 
 em, i {font-style: italic;}
 
