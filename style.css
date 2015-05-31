@@ -784,6 +784,75 @@ a:hover {text-decoration: underline;}
         top: 0;
     }
 
+    .related h2 {margin: 0 0 0.7em;}
+
+    .related ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .related li {
+        float: left;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        width: 150px;
+    }
+    .related li:nth-child(even) {float: right;}
+
+    .related a {display: block; height: 100%; width: 100%;}
+
+    .related img {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .related .info {
+        background: rgba(159,24,151,0.8);
+        color: #fff;
+        height: 130px;
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        top: -150px;
+        width: 130px;
+
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .related .info strong {
+        display: block;
+        padding: 10px 0 0;
+        text-transform: uppercase;
+    }
+
+    .related .info small {
+        background: url('img/ico-mas.png') no-repeat top right;
+        display: block;
+        font-size: 11px;
+        padding: 29px 0 0;
+        text-align: right;
+        letter-spacing: 0.1em;
+    }
+
+    .related a:hover .info {top: 0;}
+    .related a:hover img {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
 .blog .content {float: left; width: 66%;}
 .blog .content.full {float: none; margin: 0 auto;}
 
