@@ -58,9 +58,19 @@ get_header(); ?>
                                 <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
                                 <h3>
                                     <?php
-                                        foreach ( (get_the_category()) as $category ) {
+                                        $count      = 0;
+                                        $categories = get_the_category();
+
+                                        foreach ($categories as $category) {
+                                            $count++;
+
                                             if ($category->cat_name != 'Featured') {
-                                                echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a>, ';
+                                                echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a>';
+
+                                                if( $count != count($categories) ){
+                                                    echo ', ';
+                                                }
+
                                             }
                                         }
                                     ?>
