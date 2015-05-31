@@ -11,6 +11,31 @@ get_header(); ?>
         <h1><img src="<?php echo get_template_directory_uri(); ?>/img/text-inspirando-vidas-creando-cambio.png" alt="#InspirandoVidasCreandoCambio" /></h1>
     </header>
 
+    <?php
+        $feats = array(
+                    'category_name'  => 'Featured',
+                    'posts_per_page' => 5
+                );
+
+        $query = new WP_Query($feats);
+
+        if ( $query->have_posts() ) { ?>
+            <div class="featured-carousel owl-carousel">
+                <?php while ($query->have_posts()) : $query->the_post(); ?>
+                    <article><a href="<?php echo get_permalink(); ?>" rel="bookmark">
+                        <?php the_post_thumbnail(); ?>
+                        <span class="info">
+                            <strong><?php the_title(); ?></strong>
+                            <small>Leer más &gt; &gt;</small>
+                        </span class="info">
+                    </a></article>
+                <?php endwhile; ?>
+            </div>
+        <?php }
+
+        wp_reset_query();
+    ?>
+
     <section class="blog-filters contents">
         <form action="<?php echo esc_url( home_url( '/' ) ); ?>">
             <fieldset>

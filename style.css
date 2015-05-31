@@ -695,6 +695,50 @@ a:hover {text-decoration: underline;}
 }
 
 /* Blog */
+.featured-carousel {background: #9f1897;}
+
+.featured-carousel article {
+    height: 318px;
+    overflow: hidden;
+    position: relative;
+    width: 318px;
+}
+
+.featured-carousel .info {
+    background: #9f1897;
+    color: #fff;
+    display: block;
+    height: 298px;
+    left: 0;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    top: -338px;
+    width: 298px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.featured-carousel strong {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.featured-carousel small {
+    background: url('img/ico-mas-big.png') no-repeat top right;
+    display: block;
+    letter-spacing: 0.1em;
+    margin: 1em 4em 0 0;
+    padding: 70px 3em 0;
+    text-align: right;
+}
+
+.featured-carousel a:hover .info {top: 0;}
+
 .blog-filters {
     color: #336;
     font-size: 24px;

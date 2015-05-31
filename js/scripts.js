@@ -6,7 +6,7 @@ var inspira = (function(window, document, $, undefined) {
     $(document).ready(function() {
 
         /* Home Carousel */
-        $('.owl-carousel').owlCarousel({
+        $('.news-carousel').owlCarousel({
             items              : 1,
             itemsDesktop       : false,
             itemsDesktopSmall  : false,
@@ -17,6 +17,15 @@ var inspira = (function(window, document, $, undefined) {
             singleItem         : true,
             autoPlay           : 5000,
             stopOnHover        : true
+        });
+
+        /* Featured Carousel */
+        $('.featured-carousel').owlCarousel({
+            items              : 4,
+            singleItem         : false,
+            autoPlay           : 5000,
+            stopOnHover        : true,
+            pagination         : false
         });
 
         /* Contact */
