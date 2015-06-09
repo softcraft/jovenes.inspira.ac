@@ -1810,10 +1810,10 @@ a:hover {text-decoration: underline;}
     .blog-filters {text-align: center;}
 
     .blog-filters label,
-    .blog-filters .styled-select {float: none; margin: 0 auto 1em;}
+    .blog-filters .styled-select {margin: 0 auto 1em;}
 
     .blog-filters label {display: block; width: 100%;}
-    .blog-filters .styled-select {width: 68%;}
+    .blog-filters .styled-select {margin-left: 25px; width: 68%;}
 
     .blog-filters .submit {float: none;}
 
