@@ -3,6 +3,8 @@
  * ------------------
 **/
 var inspira = (function(window, document, $, undefined) {
+    'use strict';
+
     $(document).ready(function() {
 
         /* Home Carousel */
@@ -69,7 +71,6 @@ var inspira = (function(window, document, $, undefined) {
             $targetEl = $(target);
 
         if ($targetEl.length && $targetEl.is(':visible')) {
-            console.log("HOLA");
             $('html, body').animate({
                 scrollTop: $targetEl.offset().top
             }, 2000);
