@@ -1742,6 +1742,8 @@ a:hover {text-decoration: underline;}
 }
 
 @media all and (max-width: 950px) {
+    .title-img img {height: 140px;}
+
     .valores {padding-top: 180px;}
     .valores ul {margin: 0 auto; width: 570px;}
     .valores ul li:nth-child(0n+2) {margin-top: 105px;}
@@ -1758,6 +1760,8 @@ a:hover {text-decoration: underline;}
 }
 
 @media all and (max-width: 720px) {
+
+    .title-img img {height: 100px;}
 
     .title-banner img {height: 63px;}
 
@@ -1809,7 +1813,7 @@ a:hover {text-decoration: underline;}
     .blog-filters .styled-select {float: none; margin: 0 auto 1em;}
 
     .blog-filters label {display: block; width: 100%;}
-    .blog-filters .styled-select {width: 80%;}
+    .blog-filters .styled-select {width: 68%;}
 
     .blog-filters .submit {float: none;}
 
