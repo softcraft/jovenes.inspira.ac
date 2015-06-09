@@ -1904,6 +1904,7 @@ a:hover {text-decoration: underline;}
     }
 
     /* Participa */
+    .actividades h1 {font-size: 46px;}
     .membresias {
         background: none;
         max-width: 400px;
@@ -1926,6 +1927,7 @@ a:hover {text-decoration: underline;}
     .proyecto-info .sub {font-size: 40px;}
 
     /* Participa */
+    .actividades h1 {font-size: 38px;}
     .volunteer-info .title,
     .volunteer-info .sub {font-size: 50px;}
 }
@@ -1989,6 +1991,9 @@ a:hover {text-decoration: underline;}
     .img-div .big {display: none;}
 
     .proyectos li {width: 49.9%;}
+
+    /* Participa */
+    .actividades h1 {font-size: 32px;}
 }
 
 @media all and (max-width: 360px) {
