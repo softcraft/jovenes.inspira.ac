@@ -361,6 +361,8 @@ a:hover {text-decoration: underline;}
 .masthead nav a {color: #333366;}
 .masthead nav a:hover {color: #990099; text-decoration: none;}
 
+.masthead nav .current_page_item a {color: #333; font-weight: 900;}
+
 /* title img */
 .title-img, .title-banner {
     background-color: #333;
