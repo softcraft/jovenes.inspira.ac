@@ -77,7 +77,7 @@ get_header(); ?>
 
         if ( $query->have_posts() ) { ?>
 
-            <section class="blog-filters contents centered">
+            <section id="eventos" class="blog-filters contents centered">
                 <form action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <fieldset>
                         <label>Encuentra y elige el proyecto para ti</label>

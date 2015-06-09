@@ -64,5 +64,16 @@ var inspira = (function(window, document, $, undefined) {
             pagination         : false
         });
 
+        /* Smooth Scroll */
+        var target    = window.location.hash,
+            $targetEl = $(target);
+
+        if ($targetEl.length && $targetEl.is(':visible')) {
+            console.log("HOLA");
+            $('html, body').animate({
+                scrollTop: $targetEl.offset().top
+            }, 2000);
+        }
+
     });
 })(this, this.document, jQuery);

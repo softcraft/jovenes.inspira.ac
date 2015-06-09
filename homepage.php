@@ -63,7 +63,7 @@ get_header(); ?>
         ?>
 
         <div class="links">
-            <a href="<?php echo get_permalink( get_page_by_path('participa') ); ?>" class="more">Ver más</a>
+            <a href="<?php echo get_permalink( get_page_by_path('participa') ); ?>#eventos" class="more">Ver más</a>
         </div>
     </div></section>
 
