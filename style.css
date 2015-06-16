@@ -397,6 +397,8 @@ a:hover {text-decoration: underline;}
     line-height: 450px;
 }
 
+.home-video {height: 450px; line-height: 600px;}
+
 .title-banner {
     background-color: #2dd3db;
     background-image: url('img/bg-blue.jpg');

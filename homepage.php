@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-    <header class="title-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bg-inspira.jpg')">
+    <header class="title-img home-video" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bg-inspira.jpg')">
         <h1><img src="<?php echo get_template_directory_uri(); ?>/img/text-inspira.png" alt="Inspira" /></h1>
         <video autoplay loop>
             <source src="<?php echo get_template_directory_uri(); ?>/video/inspira-home.mp4" type="video/mp4" />
