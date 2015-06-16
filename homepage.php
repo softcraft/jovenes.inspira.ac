@@ -124,4 +124,8 @@ get_header(); ?>
 
     </div></section>
 
+    <div class="footer-link">
+        <a href="<?php echo get_permalink( get_page_by_path('nosotros') ); ?>" class="inspirate-btn button yellow">inspírate</a>
+    </div>
+
 <?php get_footer(); ?>

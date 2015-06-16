@@ -112,4 +112,8 @@ get_header(); ?>
         ?>
     </div></section>
 
+    <div class="footer-link">
+        <a href="<?php echo get_permalink( get_page_by_path('participa') ); ?>" class="inspirate-btn button yellow">inspira</a>
+    </div>
+
 <?php get_footer(); ?>

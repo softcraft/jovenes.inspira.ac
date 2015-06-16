@@ -612,25 +612,30 @@ a:hover {text-decoration: underline;}
 
 /* Button Inspira */
 .inspirate-btn {
-    background: url('img/btn-inspirate.gif');
     color: #f8c82d;
     display: block;
     font-size: 22px;
-    height: 64px;
-    line-height: 45px;
     margin: 0 auto 86px;
+    position: relative;
     width: 320px;
 }
+.footer-link {overflow: hidden; padding: 20px 0 0;}
 
-.footer-link {position: relative;}
-.footer-link:after {
+.inspirate-btn:after {
     background: url('img/btn-footer-hover.png') top center;
     content: "";
     display: block;
     height: 150px;
     position: absolute;
+    top: 150px;
     width: 102px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
+.inspirate-btn:hover:after {top: 0;}
 
 /* Contact */
 .contact {
