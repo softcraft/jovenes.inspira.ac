@@ -21,7 +21,7 @@ get_header(); ?>
         </header>
 
         <ul>
-            <li><a href="<?php echo get_permalink( get_page_by_path('escribenos') ); ?>">
+            <li><a href="<?php echo get_permalink( get_page_by_path('contacto') ); ?>">
                 <figure>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/peso.png" alt="" />
                 </figure>
@@ -31,7 +31,7 @@ get_header(); ?>
                 </span>
             </a></li>
 
-            <li><a href="<?php echo get_permalink( get_page_by_path('escribenos') ); ?>">
+            <li><a href="<?php echo get_permalink( get_page_by_path('contacto') ); ?>">
                 <figure>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/01.png" alt="01" />
                 </figure>
@@ -65,7 +65,7 @@ get_header(); ?>
 
     <section class="presencia"><div class="contents">
         <h1><img src="<?php echo get_template_directory_uri(); ?>/img/text-hechos-que-inspiran.png" alt="#HechosQueInspiran" /></h1>
-        <h2>Tenemos presencia en 12 estados de la república.</h2>
+        <h2>Tenemos presencia en 8 estados de la república.</h2>
 
         <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/img/mapa.jpg" alt="" />

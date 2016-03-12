@@ -25,7 +25,6 @@ get_header(); ?>
 
     <section class="nosotros-hacemos"><div class="contents">
         <h1><img src="<?php echo get_template_directory_uri(); ?>/img/text-promovemos.png" alt="#Promovemos" /></h1>
-        <p>El trabajo para <strong>experimentar la vida intensamente</strong>.</p>
         <p>Interacción entre <strong>personas de diferentes</strong> características para <strong>dar lo mejor</strong> que tienen para compartir.</p>
     </div></section>
 
@@ -68,7 +67,7 @@ get_header(); ?>
                                     <strong class="title">INSPIRA</strong>
                                     <em class="sub">'.$category->name.'</em>
                                     <p>'.$category->description.'</p>
-                                    <a href="'.get_permalink( get_page_by_path('escribenos') ).'" class="button yellow">únete</a>
+                                    <a href="'.get_permalink( get_page_by_path('contacto') ).'" class="button yellow">únete</a>
                                 </div>
                             </div>
                         </li>';

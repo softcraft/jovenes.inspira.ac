@@ -45,7 +45,7 @@ get_header(); ?>
                                     <strong class="title">INSPIRA</strong>
                                     <em class="sub"><?php the_title(); ?></em>
                                     <?php the_content(); ?>
-                                    <a href="<?php echo get_permalink( get_page_by_path('escribenos') ); ?>" class="button yellow">únete</a>
+                                    <a href="<?php echo get_permalink( get_page_by_path('contacto') ); ?>" class="button yellow">únete</a>
                                 </div>
                             </div>
                         </li>
@@ -119,7 +119,7 @@ get_header(); ?>
                                 <em>fecha de inicio</em>
                                 <date><?php echo date('d - F - o, g:i a', get_post_meta(get_the_id(), 'inspira_events_enddate', true) ); ?></date>
                                 <?php echo get_the_twitter_excerpt(); ?>
-                                <span class="button yellow">únete</span>
+                                <a href="<?php echo get_permalink( get_page_by_path('contacto') ); ?>" class="button yellow">únete</a>
                             </span>
                         </a></li>
                     <?php endwhile; ?>
